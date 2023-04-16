@@ -1,0 +1,38 @@
+{
+  "first-screen": {
+    "slider": [
+      {
+        "id": "1",
+        "title": "The NYC",
+        "img": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80"
+      },
+      {
+        "id": "2",
+        "title": "Norway",
+        "img": "https://images.unsplash.com/photo-1667560756250-9748e36cbb07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+      },
+      {
+        "id": "3",
+        "title": "Berlin",
+        "img": "https://images.unsplash.com/photo-1599946347335-f79abb1ca0e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+      }
+    ],
+    "networks": [
+      {
+        "id": "1",
+        "icon": "facebook",
+        "href": "facebook.com"
+      },
+      {
+        "id": "1",
+        "icon": "twitter",
+        "href": "twitter.com"
+      },
+      {
+        "id": "1",
+        "icon": "instagram",
+        "href": "instagram.com"
+      }
+    ]
+  }
+}
