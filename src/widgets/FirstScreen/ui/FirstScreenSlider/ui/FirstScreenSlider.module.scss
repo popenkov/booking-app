@@ -31,7 +31,6 @@
     opacity: 0.3;
   }
 
-  //   :global(.swiper-pagination-progressbar) {
   :global(.main-slider-progressbar) {
     height: 326px;
     width: 2px;
@@ -51,11 +50,10 @@
   }
 }
 
-.swiperSlide {
-}
 .slide {
   width: 100%;
   height: 100%;
+  background-size: cover !important;
 }
 
 .slideImg {

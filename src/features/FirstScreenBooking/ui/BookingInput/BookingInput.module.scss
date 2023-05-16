@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+}
+
+.input {
+  height: 108px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  border: none;
+  border-radius: 5px;
+
+  &::placeholder {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #ffffff;
+  }
+}
+
+.icon {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+}

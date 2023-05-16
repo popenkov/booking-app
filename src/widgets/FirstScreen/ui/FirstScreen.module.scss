@@ -1,28 +1,15 @@
 .firstScreen {
-  height: calc(100vh - var(--header-height));
-  margin-top: var(--header-height);
+  position: relative;
+  // height: calc(100vh - var(--header-height));
+  height: 100vh;
+  // margin-top: var(--header-height);
   background: red;
 }
 
-.header {
-  width: 100%;
-  height: var(--header-height);
-  background: var(--inverted-bg-color);
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-.links,
-.actions {
-  margin-left: auto;
-}
-
-.mainLink {
-  margin-right: 15px;
-}
-
-.appName {
-  width: var(--sidebar-width);
-  margin-left: 15px;
+.bookingContainer {
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }

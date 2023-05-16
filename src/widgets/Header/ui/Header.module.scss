@@ -1,23 +1,15 @@
 .header {
   position: fixed;
+  z-index: 2;
+
   width: 100%;
   height: var(--header-height);
-  background: var(--inverted-bg-color);
+  background-color: transparent;
   display: flex;
   align-items: center;
   padding: 20px;
 }
 
-.links,
-.actions {
-  margin-left: auto;
-}
-
-.mainLink {
-  margin-right: 15px;
-}
-
-.appName {
-  width: var(--sidebar-width);
-  margin-left: 15px;
+.isSticky {
+  background-color: var(--inverted-bg-color);
 }

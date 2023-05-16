@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  transform: rotate(-90deg);
+
+  svg {
+    width: 13px;
+    height: 8px;
+
+    path {
+      fill: var(--inverted-primary-color);
+    }
+  }
+}
+
+.btnText {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--inverted-primary-color);
+}

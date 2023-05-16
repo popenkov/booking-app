@@ -1,9 +1,9 @@
 import { rtkApi } from '@/shared/api/rtkApi';
-import { FirstScreenSLider } from '../ui/FirstScreenSlider/model/types/firstScreen';
+import { FirstScreen } from '../ui/FirstScreenSlider/model/types/firstScreen';
 
 const firstScreenApi = rtkApi.injectEndpoints({
   endpoints: (build) => ({
-    getFirstScreenData: build.query<FirstScreenSLider[], null>({
+    getFirstScreenData: build.query<FirstScreen, null>({
       query: () => ({
         url: '/first-screen',
       }),

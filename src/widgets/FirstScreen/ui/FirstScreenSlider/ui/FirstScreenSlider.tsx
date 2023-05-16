@@ -23,7 +23,7 @@ export const FirstScreenSlider: FC = () => {
     return null;
   }
 
-  const slidesAmount = sliderData?.length;
+  const slidesAmount = sliderData?.slider?.length;
 
   const handleSliderInit = (swiper: SwiperType) => {
     drawFraction(
@@ -47,18 +47,15 @@ export const FirstScreenSlider: FC = () => {
         modules={[Pagination, Autoplay, Parallax]}
         direction="vertical"
         parallax={true}
+        slidesPerView={1}
         pagination={{
           el: '.main-slider-progressbar',
-          // el: progressbarRef.current,
           type: 'progressbar',
           progressbarFillClass: 'swiper-pagination-progressbar-fill',
           renderProgressbar: function (progressbarFillClass) {
-            return '<span class="' + progressbarFillClass + '" ></span>';
+            return `<span class="${progressbarFillClass}" ></span>`;
           },
         }}
-        // pagination={{
-        //   type: 'progressbar',
-        // }}
         loop={true}
         // autoplay={{
         //   delay: SLIDE_DELAY,
@@ -73,7 +70,7 @@ export const FirstScreenSlider: FC = () => {
         onInit={handleSliderInit}
         onSlideChange={handleSlideChange}
       >
-        {sliderData?.map((slide, index) => {
+        {sliderData?.slider?.map((slide, index) => {
           return (
             <SwiperSlide key={slide.id} className={cls.swiperSlide}>
               <div
@@ -82,7 +79,6 @@ export const FirstScreenSlider: FC = () => {
                   background: setSlideBackground(slide.img),
                 }}
               >
-                {/* <img src={slide.img} className={cls.slideImg} /> */}
                 <div className={cls.textContainer}>
                   <span data-swiper-parallax="-600" className={cls.textTitle}>
                     Explore
